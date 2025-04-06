@@ -7,21 +7,21 @@ in
 pkgs.stdenv.mkDerivation rec {
   pname = "ormolu";
 
-  version = "0.7.2.0";
+  version = "0.8.0.0";
 
   src =
     if pkgs.stdenv.isDarwin
     then
       pkgs.fetchzip
         {
-          url = "justin.gateway.scarf.sh/easy-ormolu-nix/macOS/0.7.2.0.zip";
-          sha256 = "sSQxXnyc3QlfiKptDNhrVFMJJCLLzq8yLgXq9eUVeT8=";
+          url = "justin.gateway.scarf.sh/easy-ormolu-nix/aarch64-darwin/0.8.0.0.zip";
+          sha256 = "1pn0qyix30m849jr56d9rbdjz0ljxhqkdiv99mfcq8kjnfbq8cnl";
           stripRoot = false;
         }
     else
       pkgs.fetchzip {
-        url = "justin.gateway.scarf.sh/easy-ormolu-nix/Linux/0.7.2.0.zip";
-        sha256 = "ceYFDFrNj4aoy3zKQr9h9cou+uq8KfZXzzwCIaJHOXs=";
+        url = "justin.gateway.scarf.sh/easy-ormolu-nix/x86_64-linux/0.8.0.0.zip";
+        sha256 = "07cwdygzj9p8iv6jylng7i0i8vv858kna1qhzk4p5ymqqd7165g3";
       };
 
   dontStrip = true;
