@@ -21,7 +21,7 @@ pkgs.stdenv.mkDerivation rec {
     else
       pkgs.fetchzip {
         url = "justin.gateway.scarf.sh/easy-ormolu-nix/x86_64-linux/0.8.0.0.zip";
-        sha256 = "07cwdygzj9p8iv6jylng7i0i8vv858kna1qhzk4p5ymqqd7165g3";
+        sha256 = "aHVz5S8ZEMMQkbSoZt16HZ/iDbIiXncsq2/tqS0+5jA=";
       };
 
   dontStrip = true;
